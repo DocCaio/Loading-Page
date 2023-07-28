@@ -1,0 +1,43 @@
+@import '../abstract/variaveis';
+
+@mixin flexCenter() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    @include flexCenter();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    
+    .title {
+        flex-direction: column;
+        line-height: 10px;
+    }
+
+    a {        
+      color: white;
+ 
+      a:hover {
+        color: rgb(132, 14, 201);
+        transition: 0.3s all;
+      }
+      
+
+    li {
+        display: inline-block;
+        margin: 20px;
+    }
+
+ 
+}
+    
+    h1{
+        font-weight: 300;
+    }
+    
+}

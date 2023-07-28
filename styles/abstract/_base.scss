@@ -1,13 +1,4 @@
-
 @import './variaveis';
-@import './header';
-
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 body {
     background-color: rgb(34, 34, 34);
@@ -17,3 +8,9 @@ body {
     margin: 0 auto;
     padding: 15px;
  }
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
