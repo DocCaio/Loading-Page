@@ -1,8 +1,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
-body {
+* {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1b2029;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  min-width: 100vh;
+}
+
+main {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #8880fe;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.div_img {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social-media {
+  width: 36px;
+}
+
+.alternative {
+  margin-top: 1rem;
+}
+
+.span__main {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.span__main::before .span__main::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  bottom: 50%;
+  right: 50px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.span__main::after {
+  left: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+main form input {
+  background: #161923;
+  width: 300px;
+  height: 50px;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  outline: none;
+  color: rgb(166, 166, 166);
+  font-size: 1rem;
+  border: 19x solid #040b18;
+  border-radius: 8px;
+}
+
+.submit {
+  cursor: pointer;
+  width: 50%;
+  margin-top: 4rem;
+  border-radius: 32px;
+  background: #6c63ff;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.submit:hover {
+  background: #5952d4;
+}
+
+section {
+  display: flex;
+  align-items: flex-end;
+  padding: 4rem;
+}
+
+.img__sec {
+  width: 90%;
+}
+
+.circle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #e8cbc0, #636fa4);
+  -webkit-clip-path: circle(40% at right 70%);
+          clip-path: circle(40% at right 70%);
+  z-index: -1;
 }/*# sourceMappingURL=sign.css.map */
