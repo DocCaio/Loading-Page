@@ -13,6 +13,7 @@ body {
   font-weight: 500;
   display: flex;
   min-width: 100vh;
+  min-width: 100vw;
 }
 
 main {
@@ -27,6 +28,7 @@ h1 {
   color: #8880fe;
   font-size: 3rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .div_img {
@@ -112,13 +114,15 @@ main form input {
 }
 
 section {
+  width: 50vw;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
   padding: 4rem;
 }
 
 .img__sec {
-  width: 90%;
+  width: 100%;
 }
 
 .circle {
@@ -131,4 +135,35 @@ section {
   -webkit-clip-path: circle(40% at right 70%);
           clip-path: circle(40% at right 70%);
   z-index: -1;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .img__sec {
+    width: 110%;
+  }
+  .circle {
+    -webkit-clip-path: circle(35% at right 80%);
+            clip-path: circle(35% at right 80%);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .img__sec {
+    display: none;
+    visibility: hidden;
+  }
+  .circle {
+    display: none;
+    visibility: hidden;
+  }
+  main {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=sign.css.map */
